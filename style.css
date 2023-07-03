@@ -1,0 +1,96 @@
+body {
+   background-color: rgb(80, 88, 167);
+}
+
+.container {
+   max-width: 1140px;
+   margin: 110px auto;
+   text-align: center;
+}
+
+.container__start {
+   border: none;
+   font-size: 18px;
+   color: red;
+   background-color: black;
+   border-radius: 50% 0% 0% 50%;
+   cursor: pointer;
+   font-weight: bolder;
+}
+
+.container__start:hover {
+   background-color: blue;
+   font-weight: bolder;
+}
+
+canvas {
+   border: 15px dashed rgb(12, 2, 21);
+   background-color: red;
+   animation: mymove 5s infinite
+}
+
+@keyframes mymove {
+   from {
+      background-color: rgb(15, 15, 15);
+   }
+
+   to {
+      background-color: rgb(39, 59, 1);
+   }
+}
+
+.container__lives {
+   color: rgb(207, 204, 204);
+   font-size: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: blue;
+   padding: 10px;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.container__over {
+   color: black;
+   font-size: 30px;
+   font-family: serif;
+   font-weight: bolder;
+}
+
+.container__restart {
+   margin: 0 auto;
+   position: absolute;
+   top: 20%;
+   left: 33%;
+   z-index: 10000;
+   font-size: 30px;
+   font-family: serif;
+   color: blue;
+}
+
+.container__winstart {
+   width: 100%;
+   display: flex;
+   gap: 20px;
+   background-color: rgb(255, 0, 144);
+   padding: 20px;
+   border-radius: 20px;
+   margin: 0 auto;
+}
+
+.container__winstart button {
+   border: none;
+   padding: 10px;
+   background-color: black;
+   color: wheat;
+   cursor: pointer;
+}
+
+#container__heart img {
+   width: 20px;
+}
+
+#container__heart {
+   display: flex;
+   gap: 5px;
+   justify-content: center;
+}
